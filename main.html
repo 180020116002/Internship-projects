@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intership Project</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		body{
+			background: #FEDD00;
+		}
+		.part2
+		{
+			background: #9400D3;
+			height:95%;
+			margin: 0px;
+			padding: 0px;
+			width:100%;
+			color: white;
+		}
+		.part3
+		{
+		
+			background-color: #f77290;
+		}
+		.highlight
+		{
+			font-weight:bold;
+
+		}
+		* {
+  box-sizing: border-box;
+}
+
+     .bg-grey {
+        background: #292929;
+     }
+     .logo-footer {
+        margin-bottom: 40px;
+     }
+    
+.logo-part {
+    border-right: 1px solid grey;
+    height: 100%;
+    }
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #8E05C2;
+  color: #fff;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.box {
+  float: left;
+  width:35%;
+  padding: 50px;
+  margin:10px;
+  box-shadow: 5px;
+  border: 1px solid #F3EAD3;
+  padding: 30px;
+  box-shadow: 5px 10px #DBF3FA;
+  border-radius: 13px;
+}
+.last{
+	text-align: left;
+	
+}
+#progress {
+    position: relative;
+}
+
+#progress .progressBar {
+    height: 800px;
+    width: 6px;
+    background: #8fe4bf;
+    position: absolute;
+}
+
+#progress .progressNow {
+    height: 100px;
+    width: 6px;
+    background: #00b164;
+    position: absolute;
+}
+
+#progress .progressNow::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #00b164;
+    display: block;
+    margin-left: -5px;
+    position: absolute;
+    top: 90px;
+}
+	</style>
+</head>
+<body bgcolor="#FEDD00">
+	<nav class="part1" style="">
+		<table><tr><td style="text-align:center;">
+		<img src="bell.png" width="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="font-family: bold;">
+		Join the parents & enjoy exciting benefits. <a href="#">details here</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="text-align: right;"> 
+		<img src="p1.png" width="5%">
+		<img src="p2.png" width="5%">
+		<img src="p3.png" width="5%"></td></tr></table>
+	</nav>
+	<nav class="part2" style="width: 100%; height: 70%;" >
+
+    <a href="#" style="display: inline; margin-left: 5%;color:yellow;">Courses</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#" style="display: inline; color:yellow;">DIY Hub coming soon
+    </a>
+    <img src="logo.png" style="display: inline;">
+    <p style="display: inline;">Competitions</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <p style="display: inline;">Blog</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button style="display: inline-block;
+    margin-bottom:10%;
+  font-size: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: orange;
+  border: none;
+  border-radius: 15px;
+  width:8%;
+  text-align:center; 
+    ">Sign In</button>
+		
+	</nav>
+	<nav class="part3" style="color: white;">
+		<div style="margin:20px;
+		margin-top: 0px;
+		margin-bottom: 0px;">
+		<table><tr style="margin: 0px;"><td>
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" style="color: white;">
+  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/> 
+</svg> upto 3 member teams
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+ For 7-8 year olds
+
+     <h2 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Global Canvas 2019:&nbsp;Habitats of the World</h2>
+     <h5>
+     	The challenges is to create an existing group mini-exhibition/art display <br>interpreting this theme!You can use any materials you want.
+     
+     <br>
+     <br>
+7th Dec,2021 - 26th jan,2022 </h5> 
+<button style="font-style:bold; background-color: #000; color: #fff; border-radius:10px; height: 50px;
+box-shadow: 0 8px 16px #000; width:20%;"> Enter Now</button>  
+<button style="font-style:bold;color: #000; background-color: #fff; border-radius:10px; height:50px;
+box-shadow: 0 8px 16px #000; width:30%;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+  <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+</svg>Download Guidelines</button>   
+ </td>
+ <td >
+ 	<img src="bak3.png" style="margin-left: 200px;">
+ 	
+ </td>
+</tr>
+
+
+		
+	</nav>
+</table></div>
+<nav class="part4" style="background-color:#fff;color:#000; padding:20px; ">
+	<b><h3 class="highlight">Contest Timeline</h3></b>
+	<div id="progress">
+    <div class="progressBar"></div>
+    <div class="progressNow" value="1"></div>
+    <div class="progressTotal"></div>
+</div>
+	<h3 class="highlight">
+	Contest Overview</h3>
+	<h5 style="letter-spacing:1px; margin-right:25px;">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		<br>
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br>
+		"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<br> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. <br>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+	</h5>
+	<h3 class="highlight">
+		<table style="width: 100%;">
+			<tr>
+				<td align="center"><img src="figma.png"></td>
+				<td><img src="lattice.png"></td>
+				<td><img src="lattice.png"></td>
+				<td><img src="whitehatjr.png"></td>
+			</tr>
+		</table>
+		
+	</h3>
+	<h3 class="highlight">
+	Skills under scanner</h3>
+	<h5>Following are the skills can be evaluated for this contest</h5>
+	<p style="padding: 10px; border: 2px solid grey; width:10%; border-radius:5px;display: inline-block;">Automation</p>
+	<p style="padding: 10px; border: 2px solid grey; width:10%; border-radius:5px;display: inline-block;">Creativity</p>
+	<p style="padding: 10px; border: 2px solid grey; width:10%; border-radius:5px;display: inline-block;">Time managment</p>
+	<p style="padding: 10px; border: 2px solid grey; width:10%; border-radius:5px;display: inline-block;">Subject Expertise</p>
+	<p style="padding: 10px; border: 2px solid grey; width:10%; border-radius:5px;display: inline-block;">Teamwork</p>
+
+<h3 class="highlight">
+	Rewards</h3>
+	<div class="clearfix">
+  <div class="box" style="background-color:#fff">
+  <p><table>
+  	<tr>
+  		<td style="">
+  			<img src="trophy1.jpg">
+  		</td>
+  		<td style="margin-top: 0px;">
+  			<b><h3 style="font-weight:bold;">Grand price</h3></b>
+  			<ul>
+  				<li>
+  					 1 Winner
+  				</li>
+  				<li>
+  					 $5000Cash price
+  				</li><li>
+  					 Trip to australia
+  				</li>
+  			</ul>
+  		</td>
+  	</tr>
+  </table></p>
+  </div>
+  <div class="box" style="background-color:#fff">
+  <p><table>
+  	<tr>
+  		<td style="">
+  			<img src="trophy2.jpg">
+  		</td>
+  		<td style="margin-top: 0px;">
+  			<b><h3 style="font-weight:bold;">First Runner</h3></b>
+  			<ul>
+  				<li>
+  					 1 Winner
+  				</li>
+  				<li>
+  					 Trip to australia
+  				</li>
+  				<li>
+  					 $2000 Cash price
+  				</li><li>
+  					 Trip to australia
+  				</li>
+  			</ul>
+  		</td>
+  	</tr>
+  </table></p>
+  </div>
+  
+</div>
+<div class="clearfix">
+  <div class="box" style="background-color:#fff">
+  <p><table>
+  	<tr>
+  		<td style="">
+  			<img src="trophy3.jpg">
+  		</td>
+  		<td style="margin-top: 0px;">
+  			<b><h3 style="font-weight:bold;">Second Runner Up</h3></b>
+  			<ul>
+  				<li>
+  					 5 Winner
+  				</li>
+  				<li>
+  					 $1000 Cash price
+  				</li><li>
+  					 Certificate
+  				</li>
+  			</ul>
+  		</td>
+  	</tr>
+  </table></p>
+  </div>
+  <div class="box" style="background-color:#fff">
+  <p><table>
+  	<tr>
+  		<td style="">
+  			<img src="trophy4.jpg">
+  		</td>
+  		<td style="margin-top: 0px;">
+  			<b><h3 style="font-weight:bold;">Special Cash</h3></b>
+  			<ul>
+  				<li>
+  					 10 Winner
+  				</li>
+  				<li>
+  					 $500 Cash price
+  				</li>
+  			</ul>
+  		</td>
+  	</tr>
+  </table></p>
+  </div>
+  
+</div>
+	<h3 class="highlight">FAQs</h3>
+	<button class="accordion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" style="color:#8E05C2;"/>
+</svg>&nbsp;How old does my kid have to be to join Makershala?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"style="color:#8E05C2;"/>
+</svg>&nbsp;Are there any free courses I can take?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" style="color:#8E05C2;"/>
+</svg>&nbsp;Are my kids personal details safe with makershala?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<br><br>
+</nav>
+<!-- Footer -->
+<footer class="page-footer font-small"style="background-color: #9400D3;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><img src="logo.png"></h5>
+
+       
+
+      </div>
+      <!-- Grid column -->
+
+      
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        
+<div style="margin-top:10px;">
+        <ul class="list-unstyled">
+          <li>
+            Makerbazar
+          </li>
+          <li>
+           Makerkits
+          </li>
+          <li>
+            Makermentor
+          </li>
+          <li>
+            Makerlab
+          </li>
+        </ul>
+</div>
+      </div>
+      <!-- Grid column -->
+
+     
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 style="color: yellow;">About</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            Our Story
+          </li>
+          <li>
+            Benefits
+          </li>
+          <li>
+            Team
+          </li>
+          <li>
+            Careers
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"style="color: yellow;">Help
+        </h5>
+
+        <ul class="list-unstyled">
+          <li>
+           FAQs
+          </li>
+          <li>
+           Contact Us
+          </li>
+         
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+    <div>
+    	<table style="width: 100%;"><tr><td>
+    <p style="display: inline-block; float: left;">
+       	Terms & conditions
+       </p>
+       <p style="display: inline-block; float: left; margin-left:5px;">
+       	Privacy Policy
+       </p><p style="display: inline-block; float: left; margin-left:5px">
+       	Payments & Refunds
+       </p>
+</td>
+<td style="margin-left:45px;">
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+</svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+</svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+</svg>
+</td></tr></table>
+  </div>
+  <br>
+  <br><br><br>
+  <br><br><br>
+  <br><br>
+  <h5 style="text-align: left;">
+  	About makershala
+  </h5>
+  <p class="last"><p>
+  	Today, in the computer age, not all schools teach coding in early childhood resulting in a major gap in the requirements of the
+new world and our children's skills. WhiteHat Jr introduces and prepares your child from 6-18 years for this new coding
+world. They learn fundamentals of coding--logic, structure, sequence and algorithmic thinking--to generate creative
+outcomes like animations and apps. All classes are taught Live 1:1 Online in the comfort of your home by Top 1% selected
+teachers and subject matter experts.</p><p>
+<b>Coding For Kids</b><br>
+
+Whether you are a student interested in the IT careers that you could explore with a coding qualification or just fascinated by
+the world of tech and coding courses, WhiteHat Jr offers a wide range of online coding courses that make coding accessible
+to kids and young teenagers. We've put together a simple guide to answer some of the most commonly asked questions
+from parents and prospective students to help you understand the basics of what our kids programming courses cover,
+whether they are right for your child and how best to navigate them.<br>
+Curious about what is involved in courses for coding for kids?
+We have developed kids programming courses that allow kids, teens, and young adults to learn how to code at all ages with
+proper coding classes and in an environment that works for them - Online. The courses offered by WhiteHat Jr are designed
+to teach kids to code with core programming skills, and then improve the proficiency of the kids coding languages. Our
+facilitators align digital literacy into coding courses, as required by the existing skills of the learners. Since our curriculum is
+developed by industry experts and the most important activity of teaching coding is done by top 1% selected teachers,
+learners get state of the art education through our propriety, creative activity based curriculum.</p><p>
+<b>Are coding classes for kids suitable?</b><br>
+When you're a parent exploring the possibilities that coding classes for kids can bring, you 're probably wondering whether
+coding courses will suit your child. The benefits of learning to code courses extend far beyond future job opportunities.
+WhiteHat Jr teaches coding for kids in programs designed to stimulate creativity, problem-solving skills, and academic
+performance overall. Over the longer term, online coding courses are a great way to train learners for an increasingly tech-
+oriented world.</p><p><b>
+What will you learn in a coding course for kids?</b><br>
+WhiteHat Jr's coding courses are oriented towards coding and programming. You will learn:<br>
+<b>The essentials of coding: Logic, Structure, Sequence</b><br><p>
+How to create Websites, Animations & Apps
+How to manipulate data using programming languages
+How to be a problem solver
+How technologies converse with each other
+Start to learn coding with us!
+If you are a motivated parent and passionate about technology and where it can lead you to, then Join now. If you
+child would like to find out more about the opportunities provided by our coding programs, explore the kids progri
+courses offered by WhiteHat Jr and consider enrolling for a free trial. Remember, no coding experience before
+required.
+  </p></p></p></div>
+  
+
+</footer>
+<!-- Footer -->
+
+
+</body>
+</html>
